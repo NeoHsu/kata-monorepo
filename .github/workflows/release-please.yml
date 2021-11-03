@@ -10,6 +10,7 @@ jobs:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
         with:
+          path: agents
           token: ${{ secrets.ACTION_TOKEN }}
           command: manifest
           monorepo-tags: true
