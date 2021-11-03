@@ -11,6 +11,6 @@ jobs:
         id: release
         with:
           path: agents
+          release-type: node
           token: ${{ secrets.ACTION_TOKEN }}
-          command: manifest
           monorepo-tags: true
